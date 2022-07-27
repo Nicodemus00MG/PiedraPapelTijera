@@ -1,0 +1,33 @@
+.button_container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100px;
+    height: 100px;
+    
+    
+    padding: 10px;
+
+    border-radius: 100%;
+    cursor: pointer;
+
+   
+    border: dashed 1px black;
+    transition: 0.3s;
+
+}
+.button_container:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+.button_container:active{
+    transform: scale(.5);
+    transition: 0.3s;
+}
+
+input{
+
+    border:none
+    
+}
