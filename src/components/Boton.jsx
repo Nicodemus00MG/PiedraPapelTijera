@@ -1,30 +1,17 @@
-import React ,{useState}from 'react'
+import React, { useState } from "react";
 
-import "../components/Boton.css"
+import "../components/Boton.css";
 
-
-
-
-
-
-
-const Boton = ({icon}) => {
-     
-    function changeState(){
-        // setOpcion(icon.name)
-        console.log(opcion)  
-    }
-
-    const[opcion,setOpcion]=useState(icon.name)
-   
-return (
-    
-    <div onClick={changeState} className='button_container'>
-        
-    <img src={icon.url} alt="" />
-    <input  type={"button"} />
+const Boton = ({ icon, handleValueButtom }) => {
+  return (
+    <div
+      onClick={() => handleValueButtom(icon.name)}
+      className="button_container"
+    >
+      <img src={icon.url} alt="" />
+      <input type={"button"} />
     </div>
-)
-}
+  );
+};
 
-export default  Boton
+export default Boton;
